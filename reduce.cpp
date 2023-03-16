@@ -4,6 +4,22 @@
 
 using namespace std;
 
+#define POS     0
+#define NEG     1
+#define DC      2 
+
+void print_array(string array[], int length, int var_length){
+    cout << "[";
+    for(int i = 0; i<length; i++){
+        cout << " " << array[i] << " ";
+    }
+    cout << "]\n";
+}
+
+bool check_unate(string arr[]){
+
+}
+
 int main(int argc, char *argv[]){
     //argc: no. of arguments
     //argv: segments of the command: 0: call file, 1: arg1, 2: arg2, 3: arg3
