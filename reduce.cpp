@@ -25,9 +25,20 @@ int main(int argc, char *argv[]){
 
     //read from file
     while(!in_file_stream.eof()){
-        string value;
-        getline(in_file_stream, value);
-        cout << value << "\n";
+        string first_input;
+        string second_input;
+        getline(in_file_stream, first_input);
+        getline(in_file_stream, second_input);
+        int no_of_variables = stoi(first_input);
+        int no_of_cubes = stoi(second_input);
+        for(int i = 0; i<no_of_cubes; i++){
+            string value;
+            getline(in_file_stream, value);
+            cout << value << "\n";
+        }
+        if(!in_file_stream.eof()){
+            break;
+        }
     }
     in_file_stream.close();
     out_file_stream.close();
